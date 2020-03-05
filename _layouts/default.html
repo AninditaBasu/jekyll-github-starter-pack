@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<link rel="stylesheet" type="text/css" href="{{ "/css/main.css" | absolute_url }}">
+		</head>
+		<body>
+			<nav>
+	    		<ul id="menu">
+	        		<li><a href="{{ "index.html" | absolute_url }}">Home</a></li>
+		        	<li><a href="{{ "/topics/page1.html" | absolute_url }}">Page 1</a></li>
+	        		<li><a href="{{ "/topics/page2.html" | absolute_url }}">Page 2</a></li>
+					<li><a href="{{ "/topics/page3.html" | absolute_url }}">Page 3</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<p>
+				{% assign url = "https://github.com/AninditaBasu" %}
+				<a href="{{ site.baseurl | prepend: url }}">GitHub repo</a>
+				</p>
+			</footer>
+		</body>
+	</html>
