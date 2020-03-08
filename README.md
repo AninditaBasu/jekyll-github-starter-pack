@@ -12,18 +12,11 @@ No, you don't need to know either Jekyll or Liquid to get started. Once you've t
 > 
 > But when you use `Liquid`, you can use variables that'll output their values on the page at buildtime, and you can use templates for repeated blocks of text. As an example, suppose you have a help portal where certain parts of text must change according to certain parameters, you could use `Liquid` to build your pages through `Jekyll` and then render them on GitHub (or any other host).
 
-## First steps
+-  [Files and folder](#files-and-folders)
+-  [First steps](#first-steps)
+-  [Next steps](#next-steps)
+-  [Resources](#resources)
 
-1. Scroll up, locate the **Use this template** button, and click it.
-2. Specify a repository name. The name you choose will be used in the URL of your website, like this: `https://_yourGithubID_.github.io/_repositoryName_`.
-3. Click **Create repository from template**. The files and folders from this repository are copied over to a new repository for you.
-4. In the new repository you just created, locate the **Settings** button and click it. Scroll down to the section called **GitHub pages** and, in the list for **Source**, ensure that **master branch** is selected.
-5. Navigate to `https://_yourGithubID_.github.io/_repositoryName_`. What you see on the webpages is pretty much the same as what you saw at https://aninditabasu.github.io/jekyll-github-starter-pack. You now have a starting point to work with.
-5. Return to the **Code** page on the GitHub web interface, and edit the files so that they fit your vision for your website:
-   1. In the `_config.yml` file, put down your own name and replace the value of `baseurl` with the name of your repository. This name is the same as the one you specified in step 2 earlier.
-   2. In the `topics` folder, edit the `.html` as you deem fit. Just use HTML tags like you normally would, but retain the text of lines 1 through 4 as is. Do not touch them :slightly_smiling_face: Feel free to change anything from line 5 onwards.
-   3. In the root folder, edit the `index.html` file, which is the landing page of your website, as you deem fit. Again, _do not_ touch lines 1 through 4.
-6. Go to `https://_yourGithubID_.github.io/_repositoryName_`. You should now see your own content on the website.
 
 ## Files and folders
 
@@ -41,6 +34,24 @@ Because GitHub uses Jekyll to render pages, it's essential to use a directory st
 - _config.yml    # basic configuration info
 - index.html     # landing page of the website
 </pre>
+
+## First steps
+
+1. Scroll up, locate the **Use this template** button, and click it.
+2. Specify a repository name. The name you choose will be used in the URL of your website, like this: `https://_yourGithubID_.github.io/_repositoryName_`.
+3. Click **Create repository from template**. The files and folders from this repository are copied over to a new repository for you.
+4. In the new repository you just created, locate the **Settings** button and click it. Scroll down to the section called **GitHub pages** and, in the list for **Source**, ensure that **master branch** is selected.
+5. Navigate to `https://_yourGithubID_.github.io/_repositoryName_`. What you see on the webpages is pretty much the same as what you saw at https://aninditabasu.github.io/jekyll-github-starter-pack. You now have a starting point to work with.
+5. Return to the **Code** page on the GitHub web interface, and edit the files so that they fit your vision for your website:
+   1. In the `_config.yml` file, put down your own name and replace the value of `baseurl` with the name of your repository. This name is the same as the one you specified in step 2 earlier.
+   2. In the `topics` folder, edit the `.html` files as you deem fit. Just use HTML tags like you normally would, but retain the text of lines 1 through 4 as is. Do not touch them :slightly_smiling_face: Feel free to change anything from line 5 onwards.
+   3. In the root folder, edit the `index.html` file, which is the landing page of your website, as you deem fit. Again, _do not_ touch lines 1 through 4.
+6. (Optional) Delete the `LICENSE` and `README.md` files. They're nice to have for a GitHub repo but you don't really need them to get your website up and running.
+7. Go to `https://_yourGithubID_.github.io/_repositoryName_`. You should now see your own content on the website.
+
+## Next steps
+
+If you've renamed any of the files in the `topics` folder, remember to use those names in the `<nav>` section of the file.
 
 As you become comfortable with these files, you can explore the Jekyll documentation for more info about what more files and folders you can put into use for your website.
 
