@@ -49,13 +49,15 @@ Because GitHub uses Jekyll to render pages, it's essential to use a directory st
 
 ## Next steps
 
-1. Open a file in the `topics` folder and play with lines 1 to 4 :slightly_smiling_face: This part is called `Front Matter` in Jekyll-Liquid parlance. This `topics` > `.html` files in this template have only two entries for front matter:
-   - `layout`, the value of which in this case is `default`. This tells the build engine to use a file called `default` from the `templates` folder to render the page.
+1. Open a file in the `topics` folder and play with lines 1 to 4 :slightly_smiling_face: This part is called `Front Matter` in Jekyll-Liquid parlance. The `topics` > `.html` files in this template have only two entries for front matter:
+   - `layout`, the value of which in this case is `default`. This tells the build engine to use a file called `default` from the `_layouts` folder to render the page.
    -  `title`, the value of which in this case is `page1`. This is the text that is displayed as the title on browser tabs.
    
     This front matter is actually a `YAML` code block and, for your files to render correcly, should always be placed at the very top of the file. You can specify your own variables here, and call the value of those variables on the page later. For example, you can define a variable like this: `hit_list: ['Cruella', 'Villanius', 'Voldemort']` and then pick each item from this list and use it somewhere on the page.
   
-2. Edit the `_layouts` > `default.html` file to play around with the look and feel of your website. Use the `css` and `js` folders to place your styling information, and create an `image` folder at the root level to keep all your pictures at one place. If you've renamed any of the files in the `topics` folder, remember to use those names in the `<nav>` section of the file.
+2. Edit the `_layouts` > `default.html` file to play around with the look and feel of your website. If you've renamed any of the files in the `topics` folder, remember to use those names in the `<nav>` section of the file. Use the `css` folder to place your styling information. If needed, create `image` and `js` folder at the root level for your pictures and JavaScript files. You could, of course, have all JavaScript, images, and stylesheets right at the root level itself, but separate folders for them are more organised. 
+
+3. Rename the `topics` and `css` folders (and `images` and `js` if you have them), and use any names for any files that you place inside these folders. Just, don't rename `_layouts` because that name is needed by the build engine. Also, do not rename either `_config.yml` or `index.html`.
 
 As you become comfortable with these files, you can explore the Jekyll documentation for more info about what more files and folders you can put into use for your website. Here are some resources:
 
