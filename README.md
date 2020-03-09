@@ -14,11 +14,17 @@ No, you don't need to know either Jekyll or Liquid to get started. Once you've t
 
 <hr/>
 
+-  [Prerequisites](#prerequisites)
 -  [Files and folder](#files-and-folders)
 -  [First steps](#first-steps)
 -  [Next steps](#next-steps)
 
 <hr/>
+
+
+## Prerequisites
+
+This template is meant for beginners. You need have a basic knowledge of HTML, CSS, and JS.
 
 ## Files and folders
 
