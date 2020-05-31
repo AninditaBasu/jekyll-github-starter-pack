@@ -1,6 +1,6 @@
 # jekyll-github-starter-pack
 
-Are you familiar with basic HTML tags? Can you understand extremely basic CSS entries? Are you comfortable with the GitHub web interface?
+Are you familiar with basic HTML tags? or, Markdown syntax? Can you understand extremely basic CSS entries? Are you comfortable with the GitHub web interface?
 
 Yes?
 
@@ -8,7 +8,7 @@ Then come, build your own website on GitHub by using Jekyll to generate a websit
 
 No, you don't need to know either Jekyll or Liquid to get started. Once you've taken off with this starter pack, though, you'll learn as much as you need to along the way; nothing more, nothing less.
 
-> Why can't you just use plain HTML, CSS, JS to build your website through gh-pages on GitHub? You absolutely can!
+> Why can't you just use plain HTML (or plain Markdown), CSS, JS to build your website through `gh-pages` on GitHub? You absolutely can!
 > 
 > But when you use `Liquid`, you can use variables that'll output their values on the page at buildtime, and you can use templates for repeated blocks of text. As an example, suppose you have a help portal where certain parts of text must change according to certain parameters, you could use `Liquid` to build your pages through `Jekyll` and then render them on GitHub (or any other host).
 
@@ -65,7 +65,10 @@ Because GitHub uses Jekyll to render pages, it's essential to use a directory st
    
     This front matter is actually a `YAML` code block and, for your files to render correcly, should always be placed at the very top of the file. You can specify your own variables here, and call the value of those variables on the page later. For example, you can define a variable like this: `hit_list: ['Cruella', 'Villanius', 'Voldemort']` and then pick each item from this list and use it somewhere on the page.
   
-2. Edit the `_layouts` > `default.html` file to play around with the look and feel of your website. If you've renamed any of the files in the `topics` folder, remember to use those names in the `<nav>` section of the file. Use the `css` folder to place your styling information. If needed, create `image` and `js` folder at the root level (the same level as `css` and `topics`) for your pictures and JavaScript files. You could, of course, have all JavaScript, images, and stylesheets right at the root level itself (instead of keeping them inside special folders), but having separate folders for them looks a bit less cluttered. 
+2. Edit the `_layouts` > `default.html` file to play around with the look and feel of your website. If you've renamed any of the files in the `topics` folder, remember to use those names in the `<nav>` section of the file.
+> Remember, however, that your files in the `topics` folder as rendered as `.html` on your website. Therefore, even if you have a file named `page2.md`, if you're calling it (referencing it) in the `default.html` file, call it as `page2.html`.
+
+Use the `css` folder to place your styling information. If needed, create `image` and `js` folder at the root level (the same level as `css` and `topics`) for your pictures and JavaScript files. You could, of course, have all JavaScript, images, and stylesheets right at the root level itself (instead of keeping them inside special folders), but having separate folders for them looks a bit less cluttered. 
 
 3. Rename the `topics` and `css` folders (and `images` and `js` if you have them), and use any names for any files that you place inside these folders. Just, don't rename `_layouts` because that name is needed by the build engine. Also, do not rename either `_config.yml` or `index.html`.
 
