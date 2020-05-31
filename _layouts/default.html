@@ -9,8 +9,8 @@
 	    		<ul id="menu">
 	        		<li><a href="{{ "index.html" | absolute_url }}">Home</a></li>
 		        	<li><a href="{{ "/topics/page1.html" | absolute_url }}">Page 1</a></li>
-	        		<li><a href="{{ "/topics/page2.html" | absolute_url }}">Page 2</a></li>
-					<li><a href="{{ "/topics/page3.html" | absolute_url }}">Page 3</a></li>
+	        		<li><a href="{{ "/topics/page2.md" | absolute_url }}">Page 2</a></li>
+					<li><a href="{{ "/topics/page3.md" | absolute_url }}">Page 3</a></li>
 	    		</ul>
 			</nav>
 			<div class="container">
@@ -21,7 +21,7 @@
 			<footer>
 	    		<p>
 				{% assign url = "https://github.com/AninditaBasu" %}
-				<a href="{{ site.baseurl | prepend: url }}">GitHub repo</a>
+				<a href="{{ site.baseurl | prepend: url }}">Get the code</a>
 				</p>
 			</footer>
 		</body>

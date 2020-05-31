@@ -2,5 +2,7 @@
 layout: default
 title: page2
 ---
-<h1>Mr. Hyde</h1>
-<p>bad</p>
+
+# Mr. Hyde
+
+bad
